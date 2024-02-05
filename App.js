@@ -4,17 +4,20 @@ import Hero from "./Components/Hero"
 import Card from "./Components/Card"
 
 
-/*
-Challenge: Build the Navbar component.
-Check the Figma file for the design specifics.
-*/
 
 export default function App() {
     return (
         <div>
             <Navbar />
             <Hero />
-            <Card />
+            <Card 
+                img="katie-zaferes.png"
+                rating="5.0"
+                reviewCount={6}
+                country= "Turkey"
+                title="Life Lessons with Katie Zaferes"
+                price= {136}
+            />
         </div>
     )
 }
