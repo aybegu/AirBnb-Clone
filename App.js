@@ -11,7 +11,9 @@ export default function App() {
         return(
             <Card 
                 key= {item.id} //map kullandigimiz her seferde key kullanmaliyiz
-                item={item}
+                /* bu sekilde yazmak yerine spread syntax ile yazabilriz,  butun itemleri kaldirmamiz gerekir
+                item={item} */
+                {...item}
             />
         )
     })
